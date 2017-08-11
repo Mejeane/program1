@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Popup Div Starts Here -->
+    <div id="popupContact" class="registerContainer">
+
+       <div class="container">
+
+<section class="form-overall">
+
+<h1>Please complete form to register :</h1>
+
+<!-- Name & Surname -->
+<form role="form" id="form" name="form">
+	<div class="form-group">
+	   <label for="firstname">Your First Name:</label>
+	   <input type="text" name="firstname" class="form-control" id="firstName"> 
+
+	   <label for="lastname">Your Last Name:</label>
+	   <input type="text" name="lastname" class="form-control" id="lastName"> 
+    </div>
+
+<!-- Gender -->
+    <div class="radio-gender">
+       <label><input type="radio" value="male" name="gender">Male</label>
+       <label><input type="radio" value="female" name="gender">Female</label>
+    </div>
+
+<!-- Date of Birth -->
+    <div class="dob">
+    	 <div class="form-group">
+    	     <label for="sel1">Date of Birth:</label>
+    	     <p>DD/MM/YYYY</p>
+    	     <select class="form-control" name="day" id="day"></select>   
+    	     <select class="form-control" name="month" id="month"></select> 	
+             <select class="form-control" name="year" id="year"></select> 
+    	</div>
+    </div>
+
+<!-- Email & Phone -->
+    <div class="contacts">
+    	<div class="form-group">
+    	     <label for="email">Your Email:</label>
+    	     <input type="text" class="form-control" name="email" id="email">
+
+    	     <label for="phone">Your Contact Number:</label>
+    	     <input type="text" class="form-control" name="phone" id="phone">
+    	</div>
+    </div>
+
+<!-- Error -->
+    <div class="error" id="error"></div>
+
+    <!-- Register Button -->
+    <div>
+        <button type="button" class="button" id="register">Submit</button>
+    </div>
+
+</form>	
+</section>
+</div>
+
+<!-- Popup Div ends Here -->
+    </div>
+
+<!-- Display Popup Button -->
+<button id="popupBtn">Register</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
